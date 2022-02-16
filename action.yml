@@ -5,6 +5,10 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  greetbool:
+    description: 'Want to greet or not'
+    required: true
+    default: true
 outputs:
   time: # id of output
     description: 'The time we greeted you'
