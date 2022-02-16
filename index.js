@@ -4,8 +4,8 @@ const github = require('@actions/github');
 try {
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
-  let x= core.getBooleanInput('greetbool');
+  console.log(`Hello '${nameToGreet}'!`);
+  const x= core.getBooleanInput('greetbool');
   console.log(`GreetBool is ${x}`);
   core.setSecret('myPassword');
   core.exportVariable('envVar', 'Val'); 
